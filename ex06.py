@@ -22,7 +22,7 @@ def generator(num):
 
 def main():
     inp = input('Type in number:')
-
+    print('hello')
     print('\nGenerator results:')
     res = generator(inp)
     print(f'\nDecorator result:{res}')
