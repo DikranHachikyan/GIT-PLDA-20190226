@@ -18,6 +18,7 @@ def convert_number(f):
 def generator(num):
     """Generator"""
     for idx, x in enumerate(num):
+        print ("awdaw")
         yield (str(idx+1),x)
 
 def newFunc():
