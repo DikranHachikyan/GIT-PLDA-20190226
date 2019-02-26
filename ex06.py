@@ -20,6 +20,9 @@ def generator(num):
     for idx, x in enumerate(num):
         yield (str(idx+1),x)
 
+def newFunc():
+	print "Hello World!"
+	
 def main():
     inp = input('Type in number:')
     print('hello')
@@ -28,4 +31,5 @@ def main():
     print(f'\nDecorator result:{res}')
 
 if __name__ == "__main__":
+	newFunc()
     main()
