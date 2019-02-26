@@ -3,16 +3,16 @@ from functools import wraps
 
 def convert_number(f):
     @wraps(f)
-    def wrapper(*args, **kwargs):
+    def w(*args, **kwargs):
         """Wrapper"""
-        f_gen = f(*args, **kwargs)
         result = []
+        f_gen = f(*args, **kwargs)
         for res in f_gen:
+            print('c')
             result.insert(0,res[1])
             print(f'Digit #{res[0]} is: {res[1]}')
-
         return result
-    return wrapper
+    return w
 
 @convert_number
 def generator(num):
